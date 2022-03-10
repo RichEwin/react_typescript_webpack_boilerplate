@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   mode: 'development', // bundling mode (other: production)
@@ -9,6 +9,9 @@ module.exports = {
   },
   resolve: { // array of extensions used to resolve modules
     extensions: ['.ts', '.tsx', '.js'],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   module: { // loader configuration rules
     rules: [
@@ -42,4 +45,4 @@ module.exports = {
       },
     ],
   },
-};
+}
