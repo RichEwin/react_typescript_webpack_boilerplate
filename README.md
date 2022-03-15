@@ -5,6 +5,12 @@ npm install
 npm run serve
 ```
 
+run with docker
+
+```
+docker-compose up --build
+```
+
 ### run esLint
 ```
 npm run lint
