@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  rtwb:
+    container_name: rtwb
+    build: .
+    volumes:
+      - './app'
+      - '/app/node_modules'
+    ports:
+      - 8080:8080
+    command: npm run serve
